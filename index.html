@@ -33,6 +33,7 @@
     }
 
     p {
+      margin-bottom: 40px;
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
@@ -41,23 +42,18 @@
     }
 
     a {
+      padding: 16px 40px; 
       color: white;
       font-weight: bold;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 18px; 
     }
 
     img, div, table {
       height: auto;
       border-radius: 8px;
       text-align: center;
-    }
-
-    .btn {
-      padding: 8px 24px !Important;
-      background-color: #659456 !Important;
-      border-radius: 40px !Important;
-      font-size: 16px !Important;
-      line-height: 16px !Important;
-      text-decoration: none !Important;
     }
 
     .brown {
@@ -107,6 +103,11 @@
       width: 100%;
     }
 
+    .title {
+      margin-top: 24px;
+      max-width: 100%;
+    }
+
     .content {
       margin: 0 auto;
       box-sizing: content-box;
@@ -136,11 +137,20 @@
       vertical-align: top;
     }
 
+    .btn {
+      padding: 16px 0;
+      background-color: #659456; 
+      border-radius: 40px;
+      border: none;
+    }
+
     .news-info p {
       margin-bottom: 24px;
     }
 
     .news-message {
+      display: block;
+      margin-bottom: 32px;
       color: #659456;
       font-weight: 900;
       font-size: 16px;
@@ -165,6 +175,7 @@
     .social {
       border-collapse: collapse; 
       margin: 8px auto;
+      width: 80%;
     }
 
     .social img {
@@ -174,7 +185,7 @@
     .footer {
       margin: 0 auto;
       text-align: center;
-      width: 80%;
+      width: 60%;
     }
 
     .footer p {
@@ -185,6 +196,10 @@
     .footer span {
       color: white; 
       font-size: 14px;
+    }
+
+    .footer a {
+      padding: 0;
     }
   </style>
 
@@ -205,37 +220,33 @@
     <table align="center" class="hero">
       <tr>
         <td>
-          <a href="https://terranatura.com.mx/snack.html" target="_blank">
-            <img src="hero.png" alt="Snacks bajos en calorías"/>
+          <a style="padding: 0;" href="https://terranatura.com.mx/kits.html" target="_blank">
+            <img src="hero.png" alt="Kits healthy ¡por menos de $300!"/>
           </a>
         </td>
       </tr>
     </table>
 
     <div class="content">
-      <h1>
-        <span class="brown"> Cuéntame, </span>qué productos buscas:
-      </h1>
-      <p>
-        ¿Low Carb, Keto, Gluten Free, Vegano, aptos para diabéticos, suplementos; ecofriendly? <b></br>¡En terranatura.com.mx los encuentras!</b>
-      </p>
+      <img class="title" src="./title.png" alt="¡Compras seguras en terranatura.com.mx!">
 
       <div class="news"> 
-        <img src="blog.png" alt="Productos exclusivos" class="news-img"/>
+        <img src="blog.png" alt="Productos para el hogar" class="news-img"/>
 
         <div class="news-info">
           <h3>
-            Productos exclusivos
+            Productos para el hogar
           </h3>
           <p>
-            Terralover, recuerda que en nuestra tienda en línea y en las sucursales de <b>Avándaro y Pedregal</b> encontrarás productos de venta exclusiva. <b>Sí, ¡solo en Terra Natura! </b>
+            Fabricado 100% con biomateriales, <b>Élet</b> es un <b>detergente para ropa ecofriendly</b> al estar libre de químicos: no contiene sulfatos ni aromas. <b>De venta en tienda en línea.</b>
           </p>
-          <a
-            href="https://terranatura.com.mx/nuestros-productos.html"
-            target="_blank"
-            class="btn">
-            Descubre más
-          </a>
+          <button class="btn">
+            <a
+              href="https://terranatura.com.mx/detergente-ecologico-para-ropa-libre-de-quimicos-2l-elet.html"
+              target="_blank">
+              ¡Lo quiero!
+            </a>
+          </button>
         </div>
       </div>
 
@@ -247,15 +258,21 @@
             />
           <div class="news-info">
             <h3>
-              Promo <span class="orange">de la quincena</span>
+              Recetas rápidas <span class="orange">y saludables</span>
             </h3>
             <p>
-              Aplica este descuento en cualquiera de nuestras sucursales, <b>Avándaro o Pedregal.</b> Solo <b>presenta esta imagen</b> al pagar en caja. 
+              ¡Enamora a tu familia con tus comidas! <b>Síguenos en Instagram</b> y descubre ideas sencillas, rapidas, deliciosas y saludables. 
             </p>
             <span class="news-message">
-              ¡10% de descuento en toda la tienda!
+              @terranatura.mx
             </span>
-            <p>Vigencia al  30 de junio, 2021</p>
+            <button class="btn">
+              <a
+              href="https://www.instagram.com/terranatura.mx/"
+              target="_blank">
+              Ver más
+            </a>
+          </button>
           </div>
       </div>
 
@@ -265,34 +282,37 @@
 
       <div class="products">
         <div class="product">
-          <img src="prod1.png" alt="Obleas Amarea"/>
-          <p><b> Obleas Amarea. </b> ¡Kit para paladares dulces! Sabores: Natural, Matcha y Cacao. </br>$260 MXN</p>
-          <a
-            href="https://terranatura.com.mx/kit-obleas.html"
-            class="btn">
-            Comprar</a>
+          <img src="prod1.png" alt="Vidanat, Clorofila líquida concentrada con Matcha."/>
+          <p><b> Vidanat, Clorofila líquida concentrada con Matcha. </b> Desintoxica tu organismo. </br>$87 MXN</p>
+          <button class="btn">
+            <a href="https://terranatura.com.mx/clorofila-liquida-concentrada-con-matcha.html">
+              Comprar
+            </a>
+          </button>
         </div>
         <div class="product">
           <img
             src="prod2.png"
-            alt=" Sopes 100% de Harina de Almendras."
+            alt="Delou, Merengues sin azúcar, sabor tutifrutti."
           />
-          <p> <b>Sopes 100% de Harina de Almendras.</b> Son low carb. Paquete con 6 piezas. </br>$145 MXN</p>
-          <a
-            href="https://terranatura.com.mx/almondsan-sope-de-harina-de-almendra-keto-keto-pz.html"
-            target="_blank"
-            class="btn">Comprar</a>
+          <p> <b>Delou, Merengues sin azúcar, sabor tutifrutti.</b> ¡Un merengue aporta 1 caloría! </br>$98 MXN</p>
+            <button class="btn">
+            <a href="https://terranatura.com.mx/delou-merengue-sabor-tutti-frutti-keto-1l.html">
+              Comprar
+            </a>
+          </button>
         </div>
         <div class="product">
           <img
             src="prod3.png"
-            alt="Barra de chocolate oscuro."
+            alt="Chamaica, Chamoy a base de Jamaica con Stevia. "
           />
-          <p><b>Barra de chocolate oscuro.</b> ¡Tiene un exquisito relleno de coco. Es low carb! </br>$51 MXN</p>
-          <a
-            href="https://terranatura.com.mx/barra-de-chocolate-con-coco-low-carb.html"
-            target="_blank"
-            class="btn">Comprar</a>
+          <p><b>Chamaica, Chamoy a base de Jamaica con Stevia. </b> Hecho con flor de Jamaica. </br>$160 MXN</p>
+          <button class="btn">
+            <a href="https://terranatura.com.mx/chamaica-chamoy-a-base-de-jamaica-con-stevia-500g.html">
+              Comprar
+            </a>
+          </button>
         </div>
       </div>
     </div>
@@ -300,7 +320,7 @@
     <div>
       <h1 class="brown">Síguenos:</h1>
 
-      <table width="600" align="center" class="social">
+      <table align="center" class="social">
         <tr>
           <td align="center">
             <a href="https://www.instagram.com/terranatura.mx/" target="_blank">
@@ -317,7 +337,7 @@
       </tr>
       </table>
 
-      <table width="600" class="social" >
+      <table class="social" >
       <tr>
         <td align="center">
           <a href="https://api.whatsapp.com/send?phone=+525522415879" target="_blank">
