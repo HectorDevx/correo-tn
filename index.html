@@ -10,30 +10,30 @@
   <style>
     body {
       margin: 0;
-      padding: 0; 
+      padding: 0;
     }
 
     h1 {
-      margin: 0 auto;
-      padding: 24px 0 8px 0;
-      font-weight: 900 !Important;
-      font-size: 24px !Important;
-      line-height: 32px;
-      text-align: center;
+      margin: 0 auto !important;
+      padding: 24px 0 8px 0 !important;
+      font-weight: 900 !important;
+      font-size: 24px !important;
+      line-height: 32px !important;
+      text-align: center !important;
       color: #f49e02;
     }
 
     h3 {
-      margin: 16px auto;
-      font-weight: 900 !Important;
-      font-size: 18px;
-      line-height: 22px;
-      text-align: center;
-      color: #3c2314;
+      margin: 16px auto !important;
+      font-weight: 900 !important;
+      font-size: 18px !important;
+      line-height: 22px !important;
+      text-align: center !important;
+      color: #3c2314 !important;
     }
 
     p {
-      margin-bottom: 40px;
+      margin: 4px 0;
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
@@ -42,15 +42,17 @@
     }
 
     a {
-      padding: 16px 40px; 
+      padding: 16px 40px;
       color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 18px; 
-      line-height: 18px; 
+      font-weight: bold !important;
+      text-decoration: none !important;
+      font-size: 18px !important;
+      line-height: 18px !important;
     }
 
-    img, div, table {
+    img,
+    div,
+    table {
       height: auto;
       border-radius: 8px;
       text-align: center;
@@ -66,14 +68,14 @@
 
     .container {
       margin: 0;
-      padding: 16px; 
-      background: #f49e02; 
-      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      padding: 16px;
+      background: #f49e02;
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
     }
 
     .header {
       margin: 0 auto;
-      min-width: 400px;
+      min-width: 320px;
       width: 80%;
     }
 
@@ -82,10 +84,11 @@
     }
 
     .header-cell-date {
-      padding: 16px 16px 0px 0px;
+      padding: 8px 8px 0px 0px;
       text-align: right;
       vertical-align: top;
-      font-size: 16px;
+      font-size: 12px !important;
+      line-height: 12px !important;
     }
 
     .logo {
@@ -94,24 +97,24 @@
 
     .hero {
       margin: 16px auto;
-      min-width: 400px; 
+      min-width: 320px;
       width: 80%;
     }
 
     .hero img {
-      min-width: 400px;
+      min-width: 320px;
       width: 100%;
     }
 
     .title {
       margin-top: 24px;
-      max-width: 100%;
+      max-width: 94%;
     }
 
     .content {
       margin: 0 auto;
       box-sizing: content-box;
-      min-width: 400px;
+      min-width: 320px;
       width: 80%;
       border-bottom: 10px solid #659456;
       background-color: white;
@@ -123,29 +126,28 @@
     }
 
     .news-img {
-      width: 300px; 
-      margin: auto; 
-      border-radius: 8px; 
+      width: 300px;
+      margin: auto;
+      border-radius: 8px;
       height: auto;
     }
 
     .news-info {
       padding: 4% 8px 0 8px;
-      width: 350px;
-      height:fit-content;
+      width: 300px;
+      height: fit-content;
       display: inline-block;
       vertical-align: top;
     }
 
     .btn {
-      padding: 16px 0;
-      background-color: #659456; 
-      border-radius: 40px;
-      border: none;
-    }
-
-    .news-info p {
-      margin-bottom: 24px;
+      display: inherit;
+      margin-top: 16px;
+      padding: 16px 40px !important;
+      background-color: #659456 !important;
+      color: #ffffff !important;
+      border-radius: 40px !important;
+      border: none !important;
     }
 
     .news-message {
@@ -162,39 +164,46 @@
     }
 
     .product {
-      max-width: 31%; 
-      min-width: 200px; 
-      display: inline-block; 
-      margin: 4px
+      max-width: 31%;
+      min-width: 200px;
+      display: inline-block;
+      margin: 4px;
     }
 
     .product img {
-      max-width: 100%; 
+      max-width: 100%;
     }
 
     .social {
-      border-collapse: collapse; 
       margin: 8px auto;
       width: 80%;
     }
 
-    .social img {
-      width: 180px;
+    .social-item {
+      margin-top: 16px;
+      text-align: center;
+      width: 240px;
+      display: inline-block;
+    }
+
+    .social-item img {
+      text-align: center;
     }
 
     .footer {
       margin: 0 auto;
       text-align: center;
-      width: 60%;
+      min-width: 320px;
+      width: 80%;
     }
 
     .footer p {
-      margin: 16px auto;
+      margin: 4px auto;
       color: white;
     }
 
     .footer span {
-      color: white; 
+      color: white;
       font-size: 14px;
     }
 
@@ -204,169 +213,220 @@
   </style>
 
   <body>
-  <div class="container">
-    <table class="header" bgcolor="#F8C65F">
-      <tr>
-        <td width="30%" class="header-cell" vertical-align: middle></td>
-        <td width="40%" class="header-cell" text-align: center>
-          <img src="logoTerraNatura.png" alt="Logo Terra Natura" class="logo"/>
-        </td>
-        <td width="30%" class="header-cell-date brown">
-          <b>29</b> Junio 2021
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <table class="header" bgcolor="#F8C65F">
+        <tr>
+          <td width="30%" class="header-cell" vertical-align: middle></td>
+          <td width="40%" class="header-cell" text-align: center>
+            <img
+              src="logoTerraNatura.png"
+              alt="Logo Terra Natura"
+              class="logo"
+            />
+          </td>
+          <td width="30%" class="header-cell-date brown">
+            <b>29</b> Junio 2021
+          </td>
+        </tr>
+      </table>
 
-    <table align="center" class="hero">
-      <tr>
-        <td>
-          <a style="padding: 0;" href="https://terranatura.com.mx/kits.html" target="_blank">
-            <img src="hero.png" alt="Kits healthy ¡por menos de $300!"/>
-          </a>
-        </td>
-      </tr>
-    </table>
-
-    <div class="content">
-      <img class="title" src="./title.png" alt="¡Compras seguras en terranatura.com.mx!">
-
-      <div class="news"> 
-        <img src="blog.png" alt="Productos para el hogar" class="news-img"/>
-
-        <div class="news-info">
-          <h3>
-            Productos para el hogar
-          </h3>
-          <p>
-            Fabricado 100% con biomateriales, <b>Élet</b> es un <b>detergente para ropa ecofriendly</b> al estar libre de químicos: no contiene sulfatos ni aromas. <b>De venta en tienda en línea.</b>
-          </p>
-          <button class="btn">
+      <table align="center" class="hero">
+        <tr>
+          <td>
             <a
+              style="padding: 0"
+              href="https://terranatura.com.mx/kits.html"
+              target="_blank"
+            >
+              <img src="hero.png" alt="Kits healthy ¡por menos de $300!" />
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <div class="content">
+        <img
+          class="title"
+          src="./title.png"
+          alt="¡Compras seguras en terranatura.com.mx!"
+        />
+
+        <div class="news">
+          <img src="blog.png" alt="Productos para el hogar" class="news-img" />
+
+          <div class="news-info">
+            <h3>Productos para el hogar</h3>
+            <p>
+              Fabricado 100% con biomateriales, <b>Élet</b> es un
+              <b>detergente para ropa ecofriendly</b> al estar libre de
+              químicos: no contiene sulfatos ni aromas.
+              <b>De venta en tienda en línea.</b>
+            </p>
+            <a
+              class="btn"
               href="https://terranatura.com.mx/detergente-ecologico-para-ropa-libre-de-quimicos-2l-elet.html"
-              target="_blank">
+              target="_blank"
+            >
               ¡Lo quiero!
             </a>
-          </button>
+          </div>
         </div>
-      </div>
 
-      <div class="news">
-            <img
-              src="promo.png"
-              alt="Promoción de la quincena";
-              class="news-img";
-            />
+        <div class="news">
+          <img
+            src="promo.png"
+            alt="Promoción de la quincena"
+            ;
+            class="news-img"
+            ;
+          />
           <div class="news-info">
-            <h3>
-              Recetas rápidas <span class="orange">y saludables</span>
-            </h3>
+            <h3>Recetas rápidas <span class="orange">y saludables</span></h3>
             <p>
-              ¡Enamora a tu familia con tus comidas! <b>Síguenos en Instagram</b> y descubre ideas sencillas, rapidas, deliciosas y saludables. 
+              ¡Enamora a tu familia con tus comidas!
+              <b>Síguenos en Instagram</b> y descubre ideas sencillas, rapidas,
+              deliciosas y saludables.
             </p>
-            <span class="news-message">
-              @terranatura.mx
-            </span>
-            <button class="btn">
-              <a
+            <span class="news-message"> @terranatura.mx </span>
+            <a
+              class="btn"
               href="https://www.instagram.com/terranatura.mx/"
-              target="_blank">
+              target="_blank"
+            >
               Ver más
             </a>
-          </button>
           </div>
+        </div>
+
+        <h1><span class="brown">¡Los más</span> vendidos!</h1>
+
+        <div class="products">
+          <div class="product">
+            <img
+              src="prod1.png"
+              alt="Vidanat, Clorofila líquida concentrada con Matcha."
+            />
+            <p><b>Vidanat, Clorofila líquida concentrada con Matcha. </b></p>
+            <p>Desintoxica tu organismo.</p>
+            <p>$87 MXN</p>
+            <a
+              class="btn"
+              href="https://terranatura.com.mx/clorofila-liquida-concentrada-con-matcha.html"
+            >
+              Comprar
+            </a>
+          </div>
+          <div class="product">
+            <img
+              src="prod2.png"
+              alt="Delou, Merengues sin azúcar, sabor tutifrutti."
+            />
+            <p><b>Delou, Merengues sin azúcar, sabor tutifrutti.</b></p>
+            <p>¡Un merengue aporta 1 caloría!</p>
+            <p>$98 MXN</p>
+            <a
+              class="btn"
+              href="https://terranatura.com.mx/delou-merengue-sabor-tutti-frutti-keto-1l.html"
+            >
+              Comprar
+            </a>
+          </div>
+          <div class="product">
+            <img
+              src="prod3.png"
+              alt="Chamaica, Chamoy a base de Jamaica con Stevia. "
+            />
+            <p><b>Chamaica, Chamoy a base de Jamaica con Stevia. </b></p>
+            <p>Hecho con flor de Jamaica.</p>
+            <p>$160 MXN</p>
+            <a
+              class="btn"
+              href="https://terranatura.com.mx/chamaica-chamoy-a-base-de-jamaica-con-stevia-500g.html"
+            >
+              Comprar
+            </a>
+          </div>
+        </div>
       </div>
 
-      <h1>
-        <span class="brown">¡Los más</span> vendidos!
-      </h1>
+      <div>
+        <h1 class="brown">Síguenos:</h1>
 
-      <div class="products">
-        <div class="product">
-          <img src="prod1.png" alt="Vidanat, Clorofila líquida concentrada con Matcha."/>
-          <p><b> Vidanat, Clorofila líquida concentrada con Matcha. </b> Desintoxica tu organismo. </br>$87 MXN</p>
-          <button class="btn">
-            <a href="https://terranatura.com.mx/clorofila-liquida-concentrada-con-matcha.html">
-              Comprar
-            </a>
-          </button>
-        </div>
-        <div class="product">
-          <img
-            src="prod2.png"
-            alt="Delou, Merengues sin azúcar, sabor tutifrutti."
-          />
-          <p> <b>Delou, Merengues sin azúcar, sabor tutifrutti.</b> ¡Un merengue aporta 1 caloría! </br>$98 MXN</p>
-            <button class="btn">
-            <a href="https://terranatura.com.mx/delou-merengue-sabor-tutti-frutti-keto-1l.html">
-              Comprar
-            </a>
-          </button>
-        </div>
-        <div class="product">
-          <img
-            src="prod3.png"
-            alt="Chamaica, Chamoy a base de Jamaica con Stevia. "
-          />
-          <p><b>Chamaica, Chamoy a base de Jamaica con Stevia. </b> Hecho con flor de Jamaica. </br>$160 MXN</p>
-          <button class="btn">
-            <a href="https://terranatura.com.mx/chamaica-chamoy-a-base-de-jamaica-con-stevia-500g.html">
-              Comprar
-            </a>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <h1 class="brown">Síguenos:</h1>
-
-      <table align="center" class="social">
-        <tr>
-          <td align="center">
+        <div class="social">
+          <div class="social-item">
             <a href="https://www.instagram.com/terranatura.mx/" target="_blank">
-            <img src="/instagram.png" alt="Instagram Terra Natura " ></a>
-          </td>
-        <td align="center">
-          <a href="https://www.facebook.com/terranatura.mx" target="_blank">
-          <img src="/facebook.png" alt="Facebook Terra Natura"></a>
-        </td>
-        <td align="center">
-          <a href="https://www.tiktok.com/@terranatura.mx" target="_blank">
-          <img src="/tiktok.png" alt="TikTok Terra Natura" ></a>
-        </td>
-      </tr>
-      </table>
+              <img src="/instagram.png" alt="Instagram Terra Natura "
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.facebook.com/terranatura.mx" target="_blank">
+              <img src="/facebook.png" alt="Facebook Terra Natura"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.tiktok.com/@terranatura.mx" target="_blank">
+              <img src="/tiktok.png" alt="TikTok Terra Natura"
+            /></a>
+          </div>
+        </div>
 
-      <table class="social" >
-      <tr>
-        <td align="center">
-          <a href="https://api.whatsapp.com/send?phone=+525522415879" target="_blank">
-          <img src="/whatsapp.png" alt="WhatsApp Terra Natura"></a>
-        </td>
-        <td align="center">
+        <div class="social">
+          <div class="social-item">
+            <a
+              href="https://api.whatsapp.com/send?phone=+525522415879"
+              target="_blank"
+            >
+              <img src="/whatsapp.png" alt="WhatsApp Terra Natura"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://terranatura.com.mx/" target="_blank">
+              <img src="/web.png" alt="Web Terra Natura"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer">
           <a href="https://terranatura.com.mx/" target="_blank">
-          <img src="/web.png" alt="Web Terra Natura"></a>
-        </td>
-      </tr>
-      </table>
+            <img src="/logoTerraNatura-blanco.png" alt="Terra Natura" />
+          </a>
 
-      <div class="footer">
-        <a href="https://terranatura.com.mx/" target="_blank">
-          <img src="/logoTerraNatura-blanco.png" alt="Terra Natura">
-        </a>
-        
-        <p>
-          SUCURSAL PEDREGAL: Periférico Sur 4020, Colonia Jardines del Pedregal. Delegación Álvaro Obregón. Dentro de Plaza Santa Teresa. Local 18A.
-          SUCURSAL AVÁNDARO: Del Carmen no 3, Avándaro, 51200 Valle de Bravo, Méx.
-        </p>
+          <p>
+            SUCURSAL PEDREGAL: Periférico Sur 4020, Colonia Jardines del
+            Pedregal. Delegación Álvaro Obregón. Dentro de Plaza Santa Teresa.
+            Local 18A. SUCURSAL AVÁNDARO: Del Carmen no 3, Avándaro, 51200 Valle
+            de Bravo, Méx.
+          </p>
 
-        <p>
-          Aviso de privacidad: Para darte un mejor servicio reunimos tus datos sensibles y personales y contamos con medidas de seguridad que los protegen. Si tienes  dudas consulta nuestro <a style="font-weight: 700; color: white;" href="https://terranatura.com.mx/terr-privacy-policy" target="_blank">Aviso de privacidad</a> en <a href="https://terranatura.com.mx/" target="_blank">terranatura.com.mx</a>
-        </p>
+          <p>
+            Aviso de privacidad: Para darte un mejor servicio reunimos tus datos
+            sensibles y personales y contamos con medidas de seguridad que los
+            protegen. Si tienes dudas consulta nuestro
+            <a
+              style="font-weight: 700; color: white"
+              href="https://terranatura.com.mx/terr-privacy-policy"
+              target="_blank"
+              >Aviso de privacidad</a
+            >
+            en
+            <a
+              style="font-weight: 700; color: white"
+              href="https://terranatura.com.mx/"
+              target="_blank"
+              >terranatura.com.mx</a
+            >
+          </p>
 
-        <span>
-          Este correo fue enviado a /*CORREO*/, si deseas cancelar tu suscripción, <a href="cancelar-suscripcion" target="_blank">entra aquí.</a>
-        </span>
+          <span>
+            Este correo fue enviado a /*CORREO*/, si deseas cancelar tu
+            suscripción,
+            <a
+              style="font-weight: 700; color: white"
+              href="cancelar-suscripcion"
+              target="_blank"
+              >entra aquí.</a
+            >
+          </span>
         </div>
       </div>
     </div>
