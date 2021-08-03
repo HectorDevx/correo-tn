@@ -30,7 +30,7 @@
     }
 
     h3 {
-      margin: 16px 0 !important;
+      margin: 16px 0 0 0 !important;
       font-weight: 800 !important;
       font-size: 18px !important;
       line-height: 22px !important;
@@ -54,7 +54,7 @@
     }
 
     a {
-      color: white;
+      color: #1b1b1b;
       text-decoration: none !important;
     }
 
@@ -69,12 +69,12 @@
     }
 
     .white {
-      color: white;
+      color: white !important;
     }
 
     .container {
       margin: 0;
-      padding: 16px;
+      padding: 16px 8px;
       background: linear-gradient(270deg, #fc71a5 0%, #e24b83 100%);
       font-family: "Raleway", Arial, Helvetica, sans-serif;
     }
@@ -148,7 +148,7 @@
     .social {
       margin: 0 auto;
       min-width: 300px;
-      width: 640px;
+      width: 100%;
     }
 
     .social img {
@@ -176,6 +176,7 @@
     }
 
     .legals {
+      font-size: 12px;
       margin-top: 32px;
       color: white;
     }
@@ -185,40 +186,77 @@
     <div class="container">
       <div class="header">
         <img src="iconoTN.png" alt="Logo Terra Natura" class="logo" />
-        <a class="header-link" href="">Snacks</a> |
-        <a class="header-link" href="">Dieta</a> |
-        <a class="header-link" href="">Despensa</a> |
-        <a class="header-link" href="">Suplementos</a>
+        <a
+          class="header-link white"
+          href="https://terranatura.com.mx/collections/snacks"
+          target="_blank"
+          >Snacks</a
+        >
+        |
+        <a
+          class="header-link white"
+          href="https://terranatura.com.mx/collections/dieta"
+          target="_blank"
+          >Dieta</a
+        >
+        |
+        <a
+          class="header-link white"
+          href="https://terranatura.com.mx/collections/despensa"
+          target="_blank"
+          >Despensa</a
+        >
+        |
+        <a
+          class="header-link white"
+          href="https://terranatura.com.mx/collections/suplementos"
+          target="_blank"
+          >Suplementos</a
+        >
       </div>
 
       <div class="content">
         <div class="hero">
-          <h1>
-            Suplementos para toda la familia
-            <span class="color"> ¡Conócelos!</span>
-          </h1>
+          <h1>Nueva línea de desodorantes</h1>
+          <h1 class="color">¡100% naturales!</h1>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            En presentación de barra, son ideales para pieles sensibles, al ser
+            libres de aluminio y otras sustancias agresivas.
+          </p>
+          <p>¡Conoce la variedad de aromas!</p>
+          <p style="font-size: 12px">
+            La promoción aplica en nuestras sucursales de Avándaro y Pedregal,
+            hasta el 17 de agosto, 2021.
           </p>
           <img src="./hero.png" alt="Alt de imagen de hero." />
-          <a href="#" class="btn">Leer más</a>
+          <a
+            href="https://terranatura.com.mx/search?type=product&q=Oreka"
+            class="btn white"
+            >Leer más</a
+          >
         </div>
 
-        <h2>Novedades en terranatura.com.mx</h2>
+        <h2>
+          Novedades en
+          <a
+            style="color: #1b1b1b !important"
+            href="https://terranatura.com.mx/"
+            target="_blank"
+            >terranatura.com.mx</a
+          >
+        </h2>
 
         <div class="grid">
           <div class="card">
             <img src="blog.png" alt="Productos para el hogar" />
-            <h3>Productos exclusivos</h3>
+            <h3>Receta: Botana picosita con verduras deshidratadas</h3>
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat.
+              Una exquisita combinación entre lo dulce y lo acidito. ¡Nadie se
+              resiste a este mix de sabores!
             </p>
             <a
-              class="btn"
-              href="https://terranatura.com.mx/blogs/noticias/como-saber-si-llevas-una-dieta-saludable"
+              class="btn white"
+              href="https://terranatura.com.mx/blogs/noticias/recetas-faciles-botana-saludable-con-verduras-deshidratadas"
               target="_blank"
             >
               Leer más
@@ -233,14 +271,14 @@
               class="news-img"
               ;
             />
-            <h3>¡Conóce más sobre <span class="orange">nosotros!</span></h3>
+            <h3>¡Aprovecha los envíos gratis! en toda la República Mexicana</h3>
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat.
+              ¡Sin importar dónde te encuentres! En compras mayores a $399
+              pesos, el envío es gratis.
             </p>
             <a
-              class="btn"
-              href="https://www.tiktok.com/@terranatura.mx?lang=es&is_copy_url=1&is_from_webapp=v1"
+              class="btn white"
+              href="https://terranatura.com.mx/"
               target="_blank"
             >
               Leer más
@@ -252,51 +290,61 @@
 
         <div class="grid">
           <div class="card">
-            <img src="prod1.png" alt="Choco Dona, Huipi." />
-            <h3>Choco Dona, Huipi.</h3>
-            <p>$65 MXN</p>
+            <img src="prod1.png" alt="Totopos de coliflor, Cinca." />
+            <h3>Totopos de coliflor, Cinca.</h3>
+            <p>¡Sólo 15 calorías por paquete!</p>
+            <p>$70 MXN</p>
             <a
-              class="btn"
-              href="https://terranatura.com.mx/collections/snacks/products/choco-dona-huipi"
+              class="btn white"
+              href="https://terranatura.com.mx/collections/nuestros-productos/products/cinca-totopos-de-coliflor"
+              target="_blank"
+            >
+              ¡Lo quiero!
+            </a>
+          </div>
+          <div class="card white">
+            <img src="prod2.png" alt="Obleas de amaranto, Amarea." />
+            <h3>Obleas de amaranto, Amarea.</h3>
+            <p>Aptas para pacientes diabéticos.</p>
+            <p>$45 MXN</p>
+            <a
+              class="btn white"
+              href="https://terranatura.com.mx/products/obleas-de-amaranto-sabor-elderberry-amarea"
+              target="_blank"
             >
               ¡Lo quiero!
             </a>
           </div>
           <div class="card">
-            <img src="prod2.png" alt="Kit Totopos, Cinca." />
-            <h3>Kit Totopos, Cinca.</h3>
-            <p>$390 MXN</p>
+            <img src="prod3.png" alt="Papas sabor Ranch, Quest." />
+            <h3>Papas sabor Ranch, Quest.</h3>
+            <p>
+              iDisfrútalas sin romper tu dieta Keto! Con 19 gramos de proteína
+            </p>
+            <p>$69 MXN</p>
             <a
-              class="btn"
-              href="https://terranatura.com.mx/collections/snacks/products/kit-totopos-cinca?_pos=1&_sid=005942de5&_ss=r"
+              class="btn white"
+              href="https://terranatura.com.mx/products/quest-ranch-32g"
+              target="_blank"
             >
               ¡Lo quiero!
             </a>
           </div>
           <div class="card">
-            <img src="prod3.png" alt="Pan De Cereales Germinados, Ezekiel" />
-            <h3>Pan De Cereales Germinados, Ezekiel.</h3>
-            <p>$145 MXN</p>
+            <img src="prod4.png" alt="Cápsulas de Jengibre y vitamina C" />
+            <h3>Cápsulas de Jengibre y vitamina C</h3>
+            <p>Con antioxidantes. Promueve la produccción de colágeno</p>
+            <p>$195 MXN</p>
             <a
-              class="btn"
-              href="https://terranatura.com.mx/products/pan-de-cereales-germinados-sin-harina-original-ezekiel?_pos=4&_sid=3d9eb9391&_ss=r"
-            >
-              ¡Lo quiero!
-            </a>
-          </div>
-          <div class="card">
-            <img src="prod3.png" alt="Pan De Cereales Germinados, Ezekiel" />
-            <h3>Pan De Cereales Germinados, Ezekiel.</h3>
-            <p>$145 MXN</p>
-            <a
-              class="btn"
-              href="https://terranatura.com.mx/products/pan-de-cereales-germinados-sin-harina-original-ezekiel?_pos=4&_sid=3d9eb9391&_ss=r"
+              class="btn white"
+              href="https://terranatura.com.mx/products/capsulas-de-jengibre-y-vitamina-c"
+              target="_blank"
             >
               ¡Lo quiero!
             </a>
           </div>
         </div>
-        <a href="https://terranatura.com.mx/" class="btn" target="_blank"
+        <a href="https://terranatura.com.mx/" class="btn white" target="_blank"
           >Ver más productos</a
         >
       </div>
@@ -327,7 +375,7 @@
             >
               <img src="/whatsapp.png" alt="WhatsApp Terra Natura"
             /></a>
-            <a href="https://terranatura.com.mx/" target="_blank">
+            <a href="https://terranatura.com.mx/blogs/noticias" target="_blank">
               <img src="/blog-tn.png" alt="Blog Terra Natura"
             /></a>
           </div>
